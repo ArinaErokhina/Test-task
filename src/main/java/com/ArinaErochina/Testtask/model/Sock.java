@@ -1,5 +1,6 @@
 package com.ArinaErochina.Testtask.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import javax.persistence.*;
 public class Sock {
 
     @Id
+    @JsonIgnore
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
